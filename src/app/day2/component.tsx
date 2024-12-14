@@ -64,16 +64,3 @@ export function Part2({ input }: { input: string }) {
   // shortest one is 5
   return <Json>{parsed.filter(isSafeWithDampener).length}</Json>;
 }
-
-// export function Part2({ input }: { input: string }) {
-//   const parsed = input.split('\n').map((i) => i.split(/\s/).filter(Boolean).map(Number));
-//   const list1 = parsed.map((i) => i[0]).sort();
-//   const list2 = parsed.map((i) => i[1]).sort();
-//   const freqs = list2.reduce((acc, curr) => {
-//     acc[curr] = (acc[curr] || 0) + 1;
-//     return acc;
-//   }, {} as Record<number, number>);
-//   const values = list1.map((i) => i * freqs[i] || 0);
-//   const sum = values.reduce((acc, curr) => acc + curr, 0);
-//   return <div>{sum}</div>;
-// }
