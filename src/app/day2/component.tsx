@@ -56,11 +56,11 @@ function isSafeWithDampener(report: number[]) {
 }
 
 export function Part1({ input }: { input: string }) {
-  const parsed = input.split('\n').map((i) => i.split(/\s/).filter(Boolean).map(Number));
+  const parsed = input.split('\r\n').map((i) => i.split(/\s/).filter(Boolean).map(Number));
   return <Json>{parsed.filter(isSafe).length}</Json>;
 }
 export function Part2({ input }: { input: string }) {
-  const parsed = input.split('\n').map((i) => i.split(/\s/).filter(Boolean).map(Number));
+  const parsed = input.split('\r\n').map((i) => i.split(/\s/).filter(Boolean).map(Number));
   // shortest one is 5
   return <Json>{parsed.filter(isSafeWithDampener).length}</Json>;
 }
