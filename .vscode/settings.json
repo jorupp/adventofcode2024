@@ -1,0 +1,8 @@
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    // not sure what always vs. explicit is
+    "source.fixAll.eslint": "always"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
