@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/lodash": "^4.17.13",
+    "lodash": "^4.17.21",
     "next": "15.1.0",
     "raw-loader": "^4.0.2",
     "react": "^19.0.0",
